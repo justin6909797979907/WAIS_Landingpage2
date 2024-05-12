@@ -7,14 +7,14 @@
     <link rel="icon" href="img/final_logo.png">
     <title>Mahal na Señor Multipurpose Cooperative</title>
     <link rel="stylesheet" href="input.css">
-    <link rel="stylesheet" href="imageslider.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <style type="text/tailwindcss">
     </style>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body class="bg-yellow-400">
+<body>
         <div>
             <!-- header -->
             <div class="bg-lime-600 gap-1 text-white flex w-full h-7 text-xs text-righ justify-end">
@@ -90,16 +90,92 @@
         <main class="flex items-center justify-center">
             <div class="flex w-1/2 rounded-xl bg-white">
                 <input type="search" name="search" id="search" placeholder="How can I help you?" class="w-full border-none bg-transparent px-4 py-1 text-gray-900 outline-none focus:outline-none shadow-2xl active:bg-gray-300 duration-150">
-                <button class="m-2 rounded-lg bg-lime-500 px-4 py-2 text-white font-semibold hover:bg-lime-600 duration-300">Search</button>
+                <button class="m-2 rounded-lg bg-lime-500 px-4 py-2 text-white font-semibold transition duration-300 ease-in-out transform hover:shadow-md hover:-translate-y-1 hover:bg-yellow-500 disabled:pointer-events-none disabled:opacity-50 shadow-inner">Search</button>
             </div>
         </main>
         <!-- end of search bar -->
 
-        <section>
+        <!-- image with text -->
+        <div class="lg:m-10 lg:mb-14 grid lg:grid-cols-2 mb-10">
             <div>
-                
+                <img src="img/coop6.jpg" alt="" class="w-10/12 rounded-3xl shadow-lg object-cover h-96 mt-10 ml-10">
             </div>
-        </section>
+            <div class="text-image w-full lg:ml-5 lg:p-32 md:p-20 p-5 text-center shadow lg:shadow-black lg:h-96 mt-10 bg-lime-500">
+                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eius illum dolore optio. Maiores repellendus saepe cumque, consequuntur, fuga optio dignissimos eveniet molestias quam illum aperiam dolore perferendis iusto error?</p>
+            </div>
+        </div>
+        <!-- end of image with text -->
+
+        <!-- break -->
+        <div class="imgbreak w-full h-64 bg-lime-600 py-4 shadow-lg bg-cover">
+            <div class="w-96 h-48 pt-1 bg-white ml-12 lg:ml-20 my-5 shadow-lg rounded">
+                <p class="m-4 font-bold text-lime-700">Lorem, ipsum.</p>
+                <button class="m-10 rounded-lg bg-lime-500 px-4 py-2 text-white font-semibold transition duration-300 ease-in-out transform hover:shadow-md hover:-translate-y-1 hover:bg-yellow-500 disabled:pointer-events-none disabled:opacity-50 shadow-inner">Search</button>
+            </div>
+        </div>
+        <!-- end of break -->
+
+        <!-- card-hover -->
+        <div class="card-with-hover ">
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area">
+                        <div class="box">
+                            <img src="img/coop1.jpg" alt="">
+                            <div class="overlay">
+                                <h3>Cooperative1</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque, quia eligendi porro fugit nobis.</p>
+                                <a href="#" class="hover:bg-lime-600 transtion duration-200">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="img/coop1.jpg" alt="">
+                            <div class="overlay">
+                                <h3>Cooperative2</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque, quia eligendi porro fugit nobis.</p>
+                                <a href="#" class="hover:bg-lime-600 transtion duration-200">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <img src="img/coop1.jpg" alt="">
+                            <div class="overlay">
+                                <h3>Cooperative3</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque, quia eligendi porro fugit nobis.</p>
+                                <a href="#" class="hover:bg-lime-600 transtion duration-200">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of card-hover -->
+
+        <!-- picture -->
+        <div class="imagebg w-full h-64 bg-lime-600 py-4 shadow-xl bg-cover">
+            <div class="w-96 h-48 pt-1 bg-white ml-12 lg:ml-20 my-5 shadow-lg rounded">
+                <p class="m-4 font-bold text-lime-700">Lorem, ipsum.</p>
+                <button class="m-10 rounded-lg bg-lime-500 px-4 py-2 text-white font-semibold transition duration-300 ease-in-out transform hover:shadow-md hover:-translate-y-1 hover:bg-yellow-500 disabled:pointer-events-none disabled:opacity-50 shadow-inner">Search</button>
+            </div>
+        </div>
+        <!-- end picture -->
+
+        <!-- contact us -->
+        <div>
+            <div class="flex justify-center mt-10 mb-5">
+                <p class="text-lime-700 font-light text-2xl tracking-wide text-center">Got some questions? Feel free to contact us</p>
+            </div>
+            <div class="flex justify-center">
+                <p class="text-sm text-slate-600">Get in touch with us</p>
+            </div>
+            <div class="flex justify-center">
+                <button class="cbutton mt-1">Contact Us</button>
+            </div>
+        </div>
+        <!-- end of contact us -->
+        
+
 
     <script src="script.js">
     </script>
