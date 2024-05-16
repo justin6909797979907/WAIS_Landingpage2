@@ -287,8 +287,8 @@ nav {
     position: absolute;
     z-index: -1;
     background: var(--color);
-    height: 150px;
-    width: 200px;
+    height: 125px;
+    width: 400px;
     border-radius: 50%;
 }
 .cbutton:hover {
@@ -308,3 +308,5 @@ nav {
     background: #009A00;
     transition: background 0s;
 }
+
+/* footer */
