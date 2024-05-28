@@ -2,24 +2,26 @@ Membershit button - be a member
 Type of member - regular and associate
 
 Regular
+
 username
 password
-email
-first name
-middle name(optional)
-lastname
-present address
-contact number/ telephone number
-date of birth
-gender
+email*
+first name*
+middle name(optional)*
+lastname*
+present address*
+contact number/ telephone number*
+date of birth*
+gender*
 valid ID type and number
-occupation
-civil status
+occupation*
+civil status*
 spouse's name (if married)
 number of children (if applicable)
 name and birthdate of dependents
 
 Associate
+
 product type
 single or joint "and", "or"
 2x2 picture (upload)
