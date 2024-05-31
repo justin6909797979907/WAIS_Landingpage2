@@ -5,17 +5,20 @@ Regular
 
 username
 password
-email*
-first name*
-middle name(optional)*
-lastname*
+
+age*.
+email*.
+first name*.
+middle name(optional)*.
+lastname*.
 present address*
-contact number/ telephone number*
-date of birth*
 gender*
 valid ID type and number
+contact number/ telephone number*
+date of birth*
 occupation*
 civil status*
+
 spouse's name (if married)
 number of children (if applicable)
 name and birthdate of dependents
@@ -26,3 +29,4 @@ product type
 single or joint "and", "or"
 2x2 picture (upload)
 community tax certificate/TIN (upload)
+

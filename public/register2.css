@@ -1,0 +1,11 @@
+.container21 {
+    display: grid;
+    grid-template-columns: 70% 30%; /* Palitan ang value para sa iba pang paraan */
+    gap: 10px; /* Optional: Space sa pagitan ng columns */
+}
+.item1 {
+    background-color: lightblue;
+}
+.item2 {
+    background-color: lightgreen;
+}
