@@ -133,7 +133,6 @@ nav {
 /* card-hover */
 
 .card-with-hover {
-    background-color: #ffff02;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
     color: #fff;
@@ -250,7 +249,7 @@ nav {
     height: 100%;
     width: 0;
     border-radius: 15px;
-    background-color: #009A00;
+    background-color: slategray;
     z-index: -1;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
@@ -265,7 +264,7 @@ nav {
 /* end of break and picture */
 
 .cbutton {
-    --color: #009A00;
+    --color: rgba(0, 0, 0, 0.507);
     font-family: inherit;
     display: inline-block;
     width: 8em;
@@ -310,3 +309,18 @@ nav {
 }
 
 /* footer */
+
+
+/* .mission {
+    background-image: linear-gradient(220deg, lime 1%, transparent),
+    linear-gradient(220deg, yellow 50%, transparent);
+    background-size: 4em 4em;
+}
+
+.vision {
+    background-image: radial-gradient(circle, orange, transparent 20%, maroon);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: orange;
+} */
+
