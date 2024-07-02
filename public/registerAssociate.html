@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/final_logo-removebg-preview-removebg-preview.png">
+    <link rel="stylesheet" href="registerAssociate.css">
+    <title>Associate Membership</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body>
+    <div class="flex items-center justify-center mb-10">
+        <div class="form-shadow w-11/12 bg-white p-4 rounded">
+            <h1 class="text-xl font-bold mb-1 m-10">Associate Membership</h1>
+            <h6 class="ml-10 text-sm">Application Form</h6>
+            
+            <form id="form" class="m-10" method="post" action="" enctype="">
+                <hr class="my-4">
+                <!-- account information -->
+                <p class="text-l font-bold my-5 mb-10">Account Information</p>
+
+                <div class="mb-6 grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
+                    <div>
+                        <label class="block text-gray-700 font-bold text-sm mb-3">Product Type <span class="text-red-500">*</span></label>
+                        <div class="flex items-center mb-2">
+                            <input type="radio" id="" name="productType" value="savingsAccount" class="mr-2">
+                            <label for="savingsAccount" class="text-gray-700">Savings Account</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="radio" id="" name="productType" value="timeDepeosit" class="mr-2">
+                            <label for="timeDepeosit" class="text-gray-700">Time Deposit</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold text-sm mb-3">Account Type <span class="text-red-500">*</span></label>
+                        <div class="flex items-center mb-2">
+                            <input type="radio" id="" name="accType" value="accType" class="mr-2">
+                            <label for="individual" class="text-gray-700 mr-6">Individual</label>
+                            <input type="radio" id="" name="accType" value="or" class="mr-2 ml-4">
+                            <label for="or" class="text-gray-700">Joint "or"</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="radio" id="" name="accType" value="timeDepeosit" class="mr-2">
+                            <label for="and" class="text-gray-700">Joint "and"</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-bold text-sm mb-3">Account Number <span class="text-red-500">*</span></label>
+                        <input type="number" id="" class="mr-2 rounded-md w-full">
+                    </div>
+                    <div>
+                        <label for="date" class="block text-gray-700 font-bold mb-2">Date of Marriage</label>
+                        <input type="date" class="w-full px-3 py-2 border rounded-md">
+                    </div>
+                </div>
+                <!-- end of account information -->
+
+                <hr class="my-4">
+
+                <!-- personal/business/employment info -->
+                <p class="text-l font-bold my-5 mb-10">Personal/Business/Employment Information</p>
+                <div class="mb-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                    <div class="mb-4">
+                        <label for="firstName" class="block text-gray-700 font-bold mb-2">First Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="firstName" value="" name="firstName" class="b w-full px-3 py-2 border rounded-md focus:outline-none" maxlength="30" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="middleName" class="block text-gray-700 font-bold mb-2">Middle Name(Optional)</label>
+                        <input type="text" id="middleName" name="middleName" value="" class="w-full px-3 py-2 border rounded-md focus:outline-none" maxlength="30">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="lastName" class="block text-gray-700 font-bold mb-2">Last Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="lastName" value="" name="lastName" class="b w-full px-3 py-2 border rounded-md focus:outline-none" maxlength="30" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="POB" class="block text-gray-700 font-bold mb-2">Place of Birth</label>
+                        <input type="text" id="POB" name="POB" value="" class="w-full px-3 py-2 border rounded-md">
+                        <!-- <div id="errorMessage" class="error-message"></div> -->
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="DOB" class="block text-gray-700 font-bold mb-2">Date of Birth </label>
+                        <input type="date" id="spouseDOB" name="DOB" value=""
+                            class="w-full px-3 py-2 border rounded-md">
+                        <!-- <div id="errorMessage" class="error-message"></div> -->
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="contactNumber" class="block text-gray-700 font-bold mb-2">Contact Number <span class="text-red-500">*</span></label>
+                        <input type="tel" id="contactNumber" name="contactNumber" value="" class="w-full px-3 py-2 border rounded-md" required>
+                        <div id="errorMessage" class="error-message"></div>
+                        <!-- @error('contactNumber')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="email" class="block text-gray-700 font-bold mb-2">Email Address <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" value="" class="w-full px-3 py-2 border rounded-md" required>
+                        <div id="errorMessage" class="error-message"></div>
+                        <!-- @error('email')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+                </div>
+
+                <hr class="my-4">
+                
+                <!-- address -->
+                <p class="text-l font-bold my-5 mb-10">Address Details</p>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
+                    <div class="mb-4">
+                        <label for="region" class="block text-gray-700 font-bold mb-2 text-sm">Region <span class="text-red-500">*</span></label>
+                        <select id="region" name="region" class="w-full px-3 py-2 border rounded-md address="true">
+                            <option value="Region 3" selected>Region III</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="province" class="block text-gray-700 font-bold mb-2 text-sm">Province <span class="text-red-500">*</span></label>
+                        <select name="province" id="province" class="w-full px-3 py-2 border rounded-md" address="true">
+                            <option value="Bulacan" selected>Bulacan</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="municipality" class="block text-gray-700 font-bold mb-2 text-sm">Municipality <span class="text-red-500">*</span></label>
+                        <select name="municipality" id="municipality-dropdown" class="w-full px-3 py-2 border rounded-md" address="true">
+                            <option value="Marilao" selected>Marilao</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="brgy" class="block text-gray-700 font-bold mb-2 text-sm">Barangay <span class="text-red-500">*</span></label>
+                        <select id="brgyDropdown" name="baranggay" value="{{ old('baranggay') }}" class="w-full px-3 py-2 border rounded-md" required>
+                            <option value="">-Select Barangay-</option>
+                        </select>
+                        <!-- @error('baranggay')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm">
+                    <div class="mb-4">
+                        <label for="numSt" class="block text-gray-700 font-bold mb-2 text-sm">House Number and Street <span class="text-red-500">*</span></label>
+                        <input type="text" id="street" name="street" value="" class="w-full px-3 py-2 border rounded-md" placeholder="No., street" required>
+                        <!-- <div id="errorMessage" class="error-message"></div>
+                        @error('street')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="numSt" class="block text-gray-700 font-bold mb-2 text-sm">Zip Code <span class="text-red-500">*</span></label>
+                        <select id="zip" name="zip" value="" class="w-full px-3 py-2 border rounded-md" required>
+                            <option value="zip" selected>3019</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <p class="text-l font-bold my-5 mb-10">Valid ID</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-9 text-sm">
+                    <div class="mb-4">
+                        <label for="tin" class="block text-gray-700 font-bold mb-2 text-sm">Valid ID <span class="text-red-500">*</span></label>
+                        <select name="tin" id="tin" class="w-full px-3 py-2 border rounded-md" address="true">
+                            <option value="tin" selected>TIN ID</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="tin" class="block text-gray-700 font-bold mb-2 text-sm">TIN Number <span class="text-red-500">*</span></label>
+                        <input type="number" id="tin" name="tin" class="w-full px-3 py-2 border rounded-md" required>
+                    </div>
+
+                    <div>
+                        <label for="idImage" class="block text-gray-700 font-bold mb-2 text-sm">ID Picture <span class="text-red-500">*</span></label>
+                        <input type="file" name="image" id="idImage" value="" required></input>
+                        <!-- <div id="errorMessage" class="error-message"></div>
+                        @error('image1')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <!-- home ownership -->
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm mt-8">
+                    <div class="mb-4">
+                        <label for="tin" class="block text-gray-700 font-bold mb-2 text-sm">House Ownership <span class="text-red-500">*</span></label>
+                        <select name="tin" id="tin" class="w-full px-3 py-2 border rounded-md" address="true">
+                            <option value="" disabled selected>-Select House Ownership-</option>
+                            <option value="owned">Owned</option>
+                            <option value="rental">Rental</option>
+                            <option value="lwp">Living with Parents</option>
+                            <option value="housingLoan">Housing Loan</option>
+                        </select>
+                    </div>
+                    
+                    <div class="mb-2">
+                        <label for="civilStatus" class="block text-gray-700 font-bold mb-2">Civil Status <span class="text-red-500">*</span></label>
+                        <select id="civilStatus" name="civilStatus"
+                            class="w-full px-3 py-2 border rounded-md" required>
+                            <option value="" disabled selected>-Select Civil Status-</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                            <option value="Divorced">Divorced</option>
+                            <option value="Widowed">Widowed</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="citizenship" class="block text-gray-700 font-bold mb-2 text-sm">Nationality <span class="text-red-500">*</span></label>
+                        <select id="zip" name="zip" value="" class="w-full px-3 py-2 border rounded-md" required>
+                            <option value="citizenship" selected>Filipino</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="education" class="block text-gray-700 font-bold mb-2">Educational Attainment <span class="text-red-500">*</span></label>
+                        <select id="education" name="educations"
+                            class="w-full px-3 py-2 border rounded-md" required>
+                            <option value="" disabled selected>-Select Education-</option>
+                            <option value="elementary">Elementary</option>
+                            <option value="highSchool">Highschool</option>
+                            <option value="college">College</option>
+                            <option value="vocational">Vocational</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="spouseName" class="block text-gray-700 font-bold mb-2 text-sm">Spouse Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="spouseName" name="spouseName" class="w-full px-3 py-2 border rounded-md" required>
+                    </div>
+
+                    <div>
+                        <label for="maidenName" class="block text-gray-700 font-bold mb-2 text-sm">Mother's Maiden Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="maidenName" name="maidenName" class="w-full px-3 py-2 border rounded-md" required>
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="number" class="block text-gray-700 font-bold mb-2">Number of Children <span class="text-red-500">*</span></label>
+                        <input type="number" id="numberOfchildren" name="numberOfChildren" value="" class="w-full px-3 py-2 border rounded-md" required>
+                        <!-- <div id="errorMessage" class="error-message"></div>
+                        @error('numberOfChildren')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+                </div>
+                <!-- end of ownership -->
+
+                <hr class="my-4">
+
+                <!-- employer -->
+                <p class="text-l font-bold my-5 mb-10">Employer Details</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm mb-6">
+                    <div class="mb-2">
+                        <label for="text" class="block text-gray-700 font-bold mb-2">Name of Employer <span class="text-red-500">*</span></label>
+                        <input type="text" id="employerName" name="nameOfEmployer" value="" class="w-full px-3 py-2 border rounded-md" required>
+                        <!-- <div id="errorMessage" class="error-message"></div>
+                        @error('nameOfEmployer')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="text" class="block text-gray-700 font-bold mb-2">Address of Employer <span
+                                class="text-red-500">*</span></label>
+                        <input type="text" id="employerAddress" name="addressOfEmployer" value="" class="w-full px-3 py-2 border rounded-md" required>
+                        <!-- <div id="errorMessage" class="error-message"></div>
+                        @error('nameOfEmployer')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="input" class="block text-gray-700 font-bold mb-2">Job Title/Occupation/Profession <span
+                                class="text-red-500">*</span></label>
+                        <input type="text" id="job" name="job" value="" class="w-full px-3 py-2 border rounded-md" required>
+                        <!-- <div id="errorMessage" class="error-message"></div>
+                        @error('nameOfEmployer')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+
+                    <div>
+                        <label for="date" class="block text-gray-700 font-bold mb-2">Employed Since</label>
+                        <input type="date" class="w-full px-3 py-2 border rounded-md">
+                    </div>
+                    
+                    <div class="mb-2">
+                        <label for="text" class="block text-gray-700 font-bold mb-2">Salary Range <span
+                                class="text-red-500">*</span></label>
+                        <input type="number" id="salary" name="salary" value="" class="w-full px-3 py-2 border rounded-md" required>
+                        <div id="errorMessage" class="error-message"></div>
+                        <!-- @error('monthlyIncome')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+                </div>
+                <!-- end of employer -->
+
+                <hr class="my-4">
+
+                <!-- dependents -->
+                <p class="text-l font-bold my-5 mb-10">Dependents</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 text-sm mb-6 gap-10">
+                    <div class="mb-2">
+                        <label for="nameOfDependents" class="block text-gray-700 font-bold mb-2">Name of Dependents <span class="text-red-500">*</span></label>
+                        <input type="text" id="nameOfDependents" name="nameOfDependents" value="" class="w-full px-3 py-2 border rounded-md" required>
+                        <!-- <div id="errorMessage" class="error-message"></div>
+                        @error('numberOfChildren')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+
+                    <div class="mb-2">
+                        <label for="number" class="block text-gray-700 font-bold mb-2">Number of Dependents <span class="text-red-500">*</span></label>
+                        <input type="number" id="numberOfDependents" name="numberOfDependents" value="" class="w-full px-3 py-2 border rounded-md" required>
+                        <!-- <div id="errorMessage" class="error-message"></div>
+                        @error('numberOfChildren')
+                            <div class="text-red-500 mt-2">{{ $message }}</div>
+                        @enderror -->
+                    </div>
+                </div>
+                <!-- dependents end -->
+
+                <div class="flex justify-center gap-4">
+                    <button type="submit" class="mt-9 bg-lime-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Register</button>
+                </div>
+            </form>
+            
+            <div class="flex justify-center gap-4">
+                <button type="submit" class="bg-red-600 mb-10 text-white py-2 px-4 rounded-md hover:bg-red-800 focus:outline-none focus:bg-blue-600">Register</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
