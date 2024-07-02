@@ -11,7 +11,7 @@
 body{
     display: flex;
 }
-.sidebar, .logo {
+.sidebar {
     position: sticky;
     top: 0;
     left: 0;
@@ -32,9 +32,7 @@ body{
 
 .logo {
     height: 80px;
-    /* padding: 16px; */
-    margin: 7% 0;
-    padding: 0;
+    padding: 16px;
 }
 
 .menu {
@@ -156,26 +154,4 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-}
-
-.main--title {
-    color: slategrey;
-    padding-bottom: 18px;
-    font-size: 15px;
-}
-
-.payment--card {
-    /* background: slategrey; */
-    border-radius: 10px;
-    padding: 1.2rem;
-    width: 250px;
-    height:  150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: all 0.5s ease-in-out;
-}
-
-.payment--card:hover {
-    transform: translate(-5px);
 }
