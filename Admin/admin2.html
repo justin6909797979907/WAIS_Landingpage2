@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin2.css">
+    <link rel="icon" href="/public/img/final_logo-removebg-preview-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Admin</title>
+</head>
+<body>
+    <div class="sidebar bg-slate-600">
+        <div class="logo flex items-center"> <!-- hide the W --->
+            <img src="/public/img/final_logo-removebg-preview-removebg-preview.png" alt="logo" class="h-14">
+            <h2 class="wais font-bold text-gray-200 text-lg">WAIS</h2>
+        </div>
+        
+        <ul class="menu">
+            <li class="menuItem">
+                <a href="#">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li class="menuItem">
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li class="menuItem">
+                <a href="#">
+                    <i class="fa-solid fa-check"></i>
+                    <span>Members Approval</span>
+                </a>
+            </li>
+            <li class="menuItem">
+                <a href="#" id="maintenanceDropdown">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Maintenance</span>
+                    <span class="rotate-180" id="maintenanceArrow">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </span>
+                </a>
+                <ul id="maitenenceSubmenu" class="submenu hidden">
+                    <li><a href="#">Charts of Account</a></li>
+                    <li><a href="#">Types of Members</a></li>
+                    <li><a href="#">Membership Application Request</a></li>
+                    <li><a href="#">Types of Loans (Terms and Conditions)</a></li>
+                    <li><a href="#">SD/TD interest Rate</a></li>
+                    <li><a href="#">Payment Method</a></li>
+                </ul>
+            </li>
+
+            <li class="menuItem settings">
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li  class="menuItem logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content bg-slate-100">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Admin</span>
+                <h2 class="font-semibold text-xl">Dashboard</h2>
+            </div>
+
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="search" />
+                </div>
+                <img src="/public/img/coop1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="card--container">
+            <!-- <h3 class="main--title">Today's Data</h3>
+            <div class="card--wrapper">
+                <div class="payment--card bg-slate-200">
+                    <div class="card--header">
+                        <span class="amount">Payment amount</span>
+                        <span class="amount-value">$500.00</span>
+                    </div>
+                    <i class="fas fa-dollar-sign icon"></i>
+                    <span class="card-detail">***** **** 7236</span>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="/Admin/admin2.js">
+
+    </script>
+</body>
+</html>

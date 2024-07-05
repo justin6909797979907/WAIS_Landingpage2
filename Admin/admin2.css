@@ -11,6 +11,11 @@
 body{
     display: flex;
 }
+
+.logo {
+    overflow: hidden;   /* hide the W */
+}
+
 .sidebar {
     position: sticky;
     top: 0;
@@ -21,18 +26,18 @@ body{
     padding: 0 1.7rem;
     color: #fff;
     overflow: hidden;
-    transition: all 0.5s linear;
-
+    transition: all 1s linear;
 }
 
 .sidebar:hover {
-    width: 240px;
+    width: 320px;
     transition: 0.5s;
 }
 
 .logo {
     height: 80px;
-    padding: 16px;
+    margin: 7% 0;
+    padding: 0;
 }
 
 .menu {
@@ -46,10 +51,10 @@ body{
     padding: 1rem;
     margin: 8px 0;
     border-radius: 8px;
-    transition: all 0.5 ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-.menu li:hover, .active {
+.menu li:hover {
     background: #e0e0e058;
 }
 
@@ -68,6 +73,23 @@ body{
 
 .menu a i {
     font-size: 1.2rem;
+}
+
+.menuItem.active {
+    background-color: gray;
+}
+
+.submenu {
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.submenu li {
+    padding: 0.5rem 0;
+}
+
+.hidden {
+    display: none;
 }
 
 .logout {
@@ -154,4 +176,25 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+.main--title {
+    color: slategrey;
+    padding-bottom: 18px;
+    font-size: 15px;
+}
+
+.payment--card {
+    border-radius: 10px;
+    padding: 1.2rem;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.5s ease-in-out;
+}
+
+.payment--card:hover {
+    transform: translate(-5px);
 }

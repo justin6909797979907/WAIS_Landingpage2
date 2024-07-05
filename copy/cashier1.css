@@ -21,18 +21,16 @@ body{
     padding: 0 1.7rem;
     color: #fff;
     overflow: hidden;
-    transition: all 0.5s linear;
-
+    transition: all 1s linear;
 }
 
 .sidebar:hover {
-    width: 240px;
+    width: 300px;
     transition: 0.5s;
 }
 
 .logo {
     height: 80px;
-    /* padding: 16px; */
     margin: 7% 0;
     padding: 0;
 }
@@ -48,10 +46,10 @@ body{
     padding: 1rem;
     margin: 8px 0;
     border-radius: 8px;
-    transition: all 0.5 ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
-.menu li:hover, .active {
+.menu li:hover {
     background: #e0e0e058;
 }
 
@@ -70,6 +68,19 @@ body{
 
 .menu a i {
     font-size: 1.2rem;
+}
+
+.submenu {
+    padding-left: 1rem;
+    list-style: none;
+}
+
+.submenu li {
+    padding: 0.5rem 0;
+}
+
+.hidden {
+    display: none;
 }
 
 .logout {
@@ -165,11 +176,10 @@ body{
 }
 
 .payment--card {
-    /* background: slategrey; */
     border-radius: 10px;
     padding: 1.2rem;
     width: 250px;
-    height:  150px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -179,61 +189,3 @@ body{
 .payment--card:hover {
     transform: translate(-5px);
 }
-
-/* tabular Wrapper */
-.tabular--wrapper {
-    background: white;
-    margin-top: 1rem;
-    border-radius: 10px;
-    padding: 2rem;
-}
-
-.table-container {
-    width: 100%;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-thead {
-    background: rgba(113, 99, 186, 255);
-    color: #fff;
-}
-
-th {
-    padding: 15px;
-    text-align: left;
-}
-
-tbody {
-    background: #f2f2f2;
-}
-
-td {
-    padding: 15px;
-    font-size: 14px;
-    color: #333;
-}
-
-tr:nth-child(even) {
-    background: #fff;
-}
-
-tfoot {
-    background: rgba(113, 99, 186, 255);
-    font-weight: hold;
-    color: #fff;
-}
-
-tfoot td {
-    padding: 15px;
-}
-
-.table-container button {
-    color: green;
-    background: none;
-    cursor: pointer;
-}
-

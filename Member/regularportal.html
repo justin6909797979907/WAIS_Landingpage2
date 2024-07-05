@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cashier.css">
+    <link rel="stylesheet" href="regularportal.css">
+    <link rel="icon" href="/public/img/final_logo-removebg-preview-removebg-preview.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <title>Regular Member</title>
 </head>
 <body>
     <div class="sidebar bg-slate-600">
-        <div class="logo">
-            <!-- <img src="img/final_logo-removebg-preview-removebg-preview.png" alt="logo" class="h-10">
-            <h1 class="font-bold text-gray-200 text-lg ml-3 tracking-widest">WAIS</h1> -->
+        <div class="logo flex justify-between items-center">
+            <img src="/public/img/final_logo-removebg-preview-removebg-preview.png" alt="logo" class="h-14">
+            <h2 class="wais font-bold text-gray-200 text-lg">WAIS</h2>
         </div>
+        
         <ul class="menu">
             <li class="active">
                 <a href="#">
-                    <i class="fas fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
                 </a>
             </li>
             <li>
@@ -29,31 +31,33 @@
             </li>
             <li>
                 <a href="#">
-                    <i class="fas fa-chart-bar"></i>
-                    <span>Statistics</span>
+                    <i class="fa-solid fa-book"></i>
+                    <span>Passbook</span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class="fas fa-briefcase"></i>
-                    <span>Careers</span>
+                    <i class="fa-solid fa-money-bill"></i>
+                    <span>Deposit</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <span>Withdraw</span>
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <i class="fas fa-question-circle"></i>
-                    <span>FAQs</span>
+                    <i class="fa-solid fa-landmark"></i>
+                    <span>Loan Application</span>
                 </a>
             </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-star"></i>
-                    <span>Testimonials</span>
-                </a>
-            </li>
+
             <li class="settings">
                 <a href="#">
-                    <i class="fas fa-cog"></i>
+                    <i class="fa-solid fa-gear"></i>
                     <span>Settings</span>
                 </a>
             </li>
@@ -69,31 +73,31 @@
     <div class="main--content bg-slate-100">
         <div class="header--wrapper">
             <div class="header--title">
-                <span>Primary</span>
-                <h2 class="font-semibold text-xl">Dashboard</h2>
+                <span>Regular Member</span>
+                <h2 class="font-semibold text-xl">Home</h2>
             </div>
 
             <div class="user--info">
                 <div class="search--box">
                     <i class="fa-solid fa-search"></i>
-                    <input type="text" placeholder="search" />
+                    <input type="text" placeholder="search">
                 </div>
                 <img src="/public/img/coop1.jpg" alt="">
             </div>
         </div>
 
         <div class="card--container">
-            <h3 class="main--title">Today's Data</h3>
+            <!-- <h3 class="main--title">Today's Data</h3>
             <div class="card--wrapper">
-                <div class="payment--card">
+                <div class="payment--card bg-slate-200">
                     <div class="card--header">
                         <span class="amount">Payment amount</span>
                         <span class="amount-value">$500.00</span>
                     </div>
                     <i class="fas fa-dollar-sign icon"></i>
+                    <span class="card-detail">***** **** 7236</span>
                 </div>
-                <span class="card-detail">***** **** 7236</span>
-            </div>
+            </div> -->
         </div>
     </div>
 </body>

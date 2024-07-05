@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cashier1.css">
+    <link rel="icon" href="/public/img/final_logo-removebg-preview-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cashier</title>
+</head>
+<body>
+    <div class="sidebar bg-slate-600">
+        <div class="logo flex justify-between items-center">
+            <img src="/public/img/final_logo-removebg-preview-removebg-preview.png" alt="logo" class="h-14">
+            <h2 class="wais font-bold text-gray-200 text-lg">WAIS</h2>
+        </div>
+        
+        <ul class="menu">
+            <li class="active">
+                <a href="#">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="membersDropdown">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Members</span>
+                    <span class="rotate-180" id="membersArrow">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </span>
+                </a>
+                <ul id="membersSubmenu" class="submenu hidden">
+                    <li><a href="#" class="">Members Information</a></li>
+                    <li><a href="#" class="">Membership Application</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#" id="transactionDropdown">
+                    <i class="fa-solid fa-tent-arrow-left-right"></i>
+                    <span>Transaction</span>
+                    <span class="rotate-180" id="transactionArrow">
+                        <i class="fa-solid fa-angle-up"></i>
+                    </span>
+                </a>
+                <ul id="transactionSubmenu" class="submenu hidden">
+                    <li><a href="#">CRB</a></li>
+                    <li><a href="#">CDB</a></li>
+                    <li><a href="#">JVR/JB</a></li>
+                </ul>
+            </li>
+            <li class="settings">
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li  class="logout">
+                <a href="#">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main--content bg-slate-100">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Cashier</span>
+                <h2 class="font-semibold text-xl">Dashboard</h2>
+            </div>
+
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="search" />
+                </div>
+                <img src="/public/img/coop1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="card--container">
+            <!-- <h3 class="main--title">Today's Data</h3>
+            <div class="card--wrapper">
+                <div class="payment--card bg-slate-200">
+                    <div class="card--header">
+                        <span class="amount">Payment amount</span>
+                        <span class="amount-value">$500.00</span>
+                    </div>
+                    <i class="fas fa-dollar-sign icon"></i>
+                    <span class="card-detail">***** **** 7236</span>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="/copy/cashier1.js">
+
+    </script>
+</body>
+</html>
