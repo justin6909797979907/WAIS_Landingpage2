@@ -8,10 +8,15 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+.logo {
+    overflow: hidden;   /* hide the W */
+}
+
 body{
     display: flex;
 }
-.sidebar, .logo {
+.sidebar {
     position: sticky;
     top: 0;
     left: 0;
