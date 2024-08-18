@@ -135,7 +135,7 @@
                                 <td><button>Edit</button></td>
                             </tr>
 
-                            <tr>
+                            <tr> 
                                 <td>2023-05-01</td>
                                 <td>Expenses</td>
                                 <td>Office Supplies</td>
@@ -199,6 +199,75 @@
                     </thead>
                 </table>
             </div>
+        </div>
+
+        <div class="main--content bg-slate-100 flex flex-col items-center">
+
+            <form action="{{ route('Deposit.store') }}" method="post" enctype="multipart/form-data" class="form card--container bg-white p-8 rounded-lg shadow-lg w-[600px] max-w-4xl">
+                @csrf
+                <div class="flex h-[60px]">
+                    <img src="{{ asset('/img/final_logo-removebg-preview-removebg-preview.png') }}" alt="logo"
+                        class="mr-10 ml-0 h-20 w-30">
+                    <div style="font-size: 12px; text-align:center;">
+                        <h1><strong>MAHAL NA SEÑOR MULTIPURPOSE COOPERATIVE</strong></h1>
+                        <p>27 M. Santiago, Saog, Marilao, Bulacan</p>
+                        <p>CDA Reg. No.: 9520-03002873 </p>
+                    </div>
+                </div>
+                <h1 class="text-xl mt-5 text-center">DEPOSIT</h1>
+                <input type="hidden" class="text-sm" name="Reg_ID" value="{{ Auth::user()->id }}">
+                <div class="flex py-5 justify-evenly border-t border-b border-gray-300 text-sm">
+                    <label for="memberName">NAME:</label>
+                    <input class="text-center w-[400px]" value="{{ Auth::user()->name }}" type="text"
+                        placeholder="Input your name" name="memberName">
+                    @error('memberName')
+                        <div class="text-red-500 mt-2">{{ $message }}</div>
+                    @enderror
+                    <label for="transactionDate" class="ml-2">DATE:</label>
+                    <input type="date" value="{{ now()->format('Y-m-d') }}" name="transactionDate">
+                    @error('transactionDate')
+                        <div class="text-red-500 mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="flex">
+                    <div style="width: 200px; margin-top: 20px; font-size: 14px;">
+                        <select name="depositType" id="depositType" class="mr-2" style="border: 1px solid black;" required>
+                            <option value="" disabled selected>Select type of deposit</option>
+                            <option value="shareCapital">SHARE CAPITAL DEPOSIT</option>
+                            <option value="savingsDeposit">SAVINGS DEPOSIT</option>
+                            <option value="timeDeposit">TIME DEPOSIT</option>
+                        </select>
+                    </div>
+                    @error('depositType')
+                        <div class="text-red-500 mt-2">{{ $message }}</div>
+                    @enderror
+                    <div class="flex m-6">
+                        <h2 class="ml-10">AMOUNT: </h2>
+                        <span class="mr-4">₱</span>
+                        <input class="w-full" style="height: 20px;" type="number" name="amountDeposit" id="amountDeposit"
+                            required>
+                    </div>
+                    @error('amountDeposit')
+                        <div class="text-red-500 mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div>
+                    <h2 class="ml-2 w-full text-sm">UPLOAD PROOF OF PAYMENT: </h2>
+                    <div class="flex mt-0 pb-2 text-xs ">
+                        <input style="height: 40px;" type="file" name="paymentProof" required>
+                    </div>
+                    @error('paymentProof')
+                        <div class="text-red-500 mt-2">{{ $message }}</div>
+                    @enderror
+                </div>
+                <div class="flex justify-end">
+                    <button id="submit" class="px-5 py-2 bg-blue-500 hover:bg-blue-700 text-white cursor-pointer rounded-md"
+                        type="submit" name="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+    
         </div>
     </div>
 </body>

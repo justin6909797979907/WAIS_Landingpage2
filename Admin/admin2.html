@@ -97,6 +97,309 @@
                 </div>
             </div> -->
         </div>
+
+        <div class="tabular--wrapper flex flex-col items-center">
+            <div class="form card--container bg-white p-8 rounded-lg shadow-lg w-[850px] max-w-4xl">
+    
+                <section class="flex flex-col items-center">
+                    <section class="flex h-[60px] mb-14 mr-24">
+                        <img src="{{ asset('/img/final_logo-removebg-preview-removebg-preview.png') }}" alt="logo" class="mr-10 ml-0 h-20 w-30">
+                        <section style="font-size: 16px; text-align:center;">
+                            <h1><strong>MAHAL NA SEÑOR MULTIPURPOSE COOPERATIVE</strong></h1>
+                            <p>27 M. Santiago, Saog, Marilao, Bulacan</p>
+                            <p>CDA Reg. No.: 9520-03002873 </p>
+                        </section>
+                    </section>
+                </section>
+        
+                <hr>
+        
+                {{-- personal details --}}
+                <section class="">
+                    <h1 class="my-4 text-center font-bold">Personal Details</h1>
+        
+                    <section class="border-container mb-5">
+                        <section class="border border-solid border-black h-20 w-20 flex items-center justify-center">
+                            <section class="text-center">IMAGE</section>
+                        </section>
+                    </section>
+        
+                    <section>
+                        <section class="flex justify-start text-sm">
+                            <div class="mx-1"><strong>Name: </strong></div>
+                            <div class="mx-1">{{$regMember->lastName}},</div>
+                            <div class="mx-1">{{$regMember->firstName}}</div>
+                            <div class="mx-1">{{$regMember->middleName}}</div>
+                        </section>
+            
+                        <section class="flex justify-start ml-14">
+                            <p class="text-xs text-gray-500 mr-8">Last</p>
+                            <p class="text-xs text-gray-500 mr-8"> First</p>
+                            <p class="text-xs text-gray-500 mr-8">Middle</p>
+                        </section>
+                    </section>
+        
+                    <section class="flex justify-start text-sm mt-5">
+                        <section class="mx-1"><strong>Gender: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->gender}}</section>
+                    </section>
+        
+                    <section class="flex justify-start text-sm mt-5">
+                        <section class="mx-1"><strong>Phone Number: </strong></section>
+                        <section class="mx-1">{{$regMember->contactNumber}}</section>
+                    </section>
+        
+                    <section class="flex justify-start text-sm mt-5">
+                        <section class="mx-1"><strong>Email: </strong></section>
+                        <section class="mx-1"><u>{{$regMember->email}}</u></section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5">
+                        <section class="mx-1"><strong>FB Account: </strong></section>
+                        <section class="mx-1">{{$regMember->facebookAccount}}</section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5">
+                        <section class="mx-1"><strong>Place of Birth: </strong></section>
+                        <section class="mx-1">{{$regMember->POB}}</section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5">
+                        <section class="mx-1"><strong>Date of Birth: </strong></section>
+                        <section class="mx-1">{{$regMember->DOB}}</section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Religion: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->religion}}</section>
+                    </section>
+                    {{-- end of personal detaails --}}
+    
+                    <hr>
+                    
+                    {{-- address details --}}
+                    <h1 class="my-4 text-center font-bold">Address Details</h1>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Region: </strong></section>
+                        <section class="mx-1">{{$regMember->address->Region}}</section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Province: </strong></section>
+                        <section class="mx-1">{{$regMember->address->Province}} </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Municipality: </strong></section>
+                        <section class="mx-1">{{$regMember->address->Municipality}} </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Barangay: </strong></section>
+                        <section class="mx-1">{{$regMember->address->Barangay}} </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>House number and Street: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->address->Street}} </section>
+                    </section>
+                    {{-- end of address details --}}
+    
+                    <hr>
+                    
+                    {{-- valid ID --}}
+                    <h1 class="my-4 text-center font-bold">Valid Identification</h1>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>IDType1: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->idValidation->Id_Type_1}} </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>IDNo.1: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->idValidation->Id_Num_1}} </section>
+                    </section>
+    
+                    <section class="border-container mb-5">
+                        <section class="border border-solid border-black h-20 w-20 flex items-center justify-center">
+                            <section class="text-center">IMAGE</section>
+                        </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>IDType2: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->idValidation->Id_Type_2}} </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>IDNo.2: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->idValidation->Id_Num_2}} </section>
+                    </section>
+    
+                    <section class="border-container mb-5">
+                        <section class="border border-solid border-black h-20 w-20 flex items-center justify-center">
+                            <section class="text-center">IMAGE</section>
+                        </section>
+                    </section>
+                    {{-- end of valid ID --}}
+    
+                    <hr>
+    
+                    {{-- Employment --}}
+                    <h1 class="my-4 text-center font-bold">Employment Details</h1>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Occupation: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->occupation}} </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Employment Status: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->employmentStatus}} </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Educational Attainment: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->educationalAttainment}} </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Name of Employer: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->educationalAttainment}} </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Address of Employer: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->employer->EmployerAddress}} </section>
+                    </section>
+                    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Monthly Income: ₱ </strong></section>
+                        <section class="mx-1 capitalize">{{number_format($regMember->monthlyIncome)}} </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Annual Income: ₱ </strong></section>
+                        <section class="mx-1 capitalize">{{number_format($regMember->annualIncome)}} </section>
+                    </section>
+                    {{-- end of employment --}}
+    
+                    <hr>
+    
+                    other info
+                    <h1 class="my-4 text-center font-bold">Other Information</h1>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>House Ownership: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->houseOwnership}}</section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Length of Stay: </strong></section>
+                        <section class="mx-1 capitalize">
+                            @if($regMember->lengthOfStay > 1)
+                                {{ $regMember->lengthOfStay }} years
+                            @else
+                                {{ $regMember->lengthOfStay }} year
+                            @endif
+                        </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Citizenship: </strong></section>
+                        <section class="mx-1 capitalize">{{$regMember->citizenship}}</section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Number of Children: </strong></section>
+                        <section class="mx-1 capitalize">
+                            @if($regMember->numberOfChildren > 1)
+                                {{$regMember->numberOfChildren}} children
+                            @elseif($regMember->numberOfChildren == 1)
+                                {{$regMember->numberOfChildren}} child
+                            @else
+                                none
+                            @endif
+                        </section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        @if($regMember->civilStatus == 'Married')
+                        <section><strong>Civil Status: </strong>{{$regMember->civilStatus}}</section>
+                        <section class="mt-1" style="text-transform: capitalize;"><strong>Place Of Marriage: </strong>{{$regMember->marriage->placeOfMarriage}}</section>
+                        @php
+                        $dateOfMarriage = \Carbon\Carbon::parse($regMember->marriage->dateOfMarriage)->format('F j, Y');
+                        @endphp
+                        <div class="mt-1"><strong>Date of Marriage: </strong>{{$dateOfMarriage}}</div>
+                        @else
+                        <span class="mt-1"><strong>Civil Status: </strong>{{$regMember->civilStatus}}</span>
+                        @endif
+                    </section>
+    
+                    @if (!isset($regMember->marriage->spouse))
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Spouse Name: </strong></section>
+                        <section class="mx-1 capitalize">{{ $regMember->marriage->spouse->spouseName }}</section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Spouse Place of Birth: </strong></section>
+                        <section class="mx-1 capitalize">{{ $regMember->marriage->spouse->placeOfBirth }}</section>
+                    </section>
+                    @php
+                        $spouseDOB = \Carbon\Carbon::parse($regMember->marriage->spouse->dateOfBirth)->format('F j, Y');
+                    @endphp
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Spouse Date of Birth: </strong></section>
+                        <section class="mx-1 capitalize">{{ $regMember->marriage->spouse->spouseDOB }}</section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Spouse Educational Attainment </strong></section>
+                        <section class="mx-1 capitalize">{{ $regMember->marriage->spouse->spouseEducationalAttainment }}</section>
+                    </section>
+    
+                    <section class="flex justify-start text-sm mt-5 mb-7">
+                        <section class="mx-1"><strong>Spouse Occupation: </strong></section>
+                        <section class="mx-1 capitalize">{{ $regMember->marriage->spouse->occupationSpouse}}</section>
+                    </section>
+    
+                    @else
+                        <div class="text-sm p-2">No spouse details.</div>
+                    @endif
+    
+    
+                    <div class="text-sm p-2"><strong>DEPENDENTS</div>
+                        @foreach($regMember->dependency as $dependency)
+                        <div class="p-1 text-center">
+                                <div class="flex">
+                                    <div class="text-left text-xs p-1"><strong>Name:</strong></div>
+                                    <div class="text-xs p-1" style="text-transform: capitalize;">{{$dependency->Dependent_name}}</div>
+                                </div>
+                                @php
+                                $dependencyDOB = \Carbon\Carbon::parse($dependency->Dependent_dob)->format('F j, Y');
+                                @endphp
+                            <div class="flex">
+                                <div class="text-left text-xs p-1"><strong>Birthdate:</strong></div>
+                                <div class="text-xs p-1">{{$dependencyDOB}}</div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+                <div><button class="p-1 btn btn-secondary border border-green-800 bg-green-500 rounded" onclick="window.history.back();">Back</button></div>
+    
+    
+    
+    
+                    
+        
+                </section>
+            </div>
+            
+        </div>
     </div>
 
     <script src="/Admin/admin2.js">
